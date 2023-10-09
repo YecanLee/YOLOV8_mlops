@@ -24,5 +24,6 @@ def test_track_stream():
 # RUN THOSE IN COMMAND LINE
 # pip install coverage
 # coverage run -m pytest test/
-# coverage report
-# coverage html
+# coverage report -i
+# coverage html -i
+# @pytest.mark.skipif(not IS_TMP_WRITEABLE, reason='directory is not writeable')
