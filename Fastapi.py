@@ -1,13 +1,22 @@
 from fastapi import FastAPI, UploadFile, HTTPException
 import cv2
 import numpy as np
+from ultralytics import YOLO
+
+# Load a model
+model = YOLO('yolov8n.pt')  # load an official model
+# model = YOLO('path/to/best.pt')  # load a custom trained model
+
+# Export the model
+model.export(format='onnx')
+
 
 app = FastAPI()
 
 ALLOWED_MIME_TYPES = ["image/jpeg", "image/png", "image/bmp"]
 
 
-net = cv2.dnn.readNet("yolov8s.pt")
+net = cv2.dnn.readNet("yolov8n.onnx")
 layer_names = net.getLayerNames()
 output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 

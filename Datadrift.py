@@ -1,7 +1,8 @@
 # define the relative path for the images
 train_images_directory = "./Mydataset/VisDrone2019-DET-train/images"
 test_images_directory = "./Mydataset/VisDrone2019-DET-test-dev/images"
-
+train_images_directory = "C:/Users/LMMISTA-WAP265/YOLOV8_mlops/mlops/data/Mydataset/VisDrone2019-DET-train"
+test_images_directory = "C:/Users/LMMISTA-WAP265/YOLOV8_mlops/mlops/data/Mydataset/VisDrone2019-DET-test"
 
 import os
 import random
