@@ -14,8 +14,9 @@ jobs:
 
     - name: Set up Python
       uses: actions/setup-python@v2
-      matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
+      strategy:
+        matrix:
+          python-version: ["3.8", "3.9", "3.10", "3.11"]
 
     - name: Cache pip dependencies
       uses: actions/cache@v2
