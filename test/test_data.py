@@ -5,7 +5,7 @@ import pytest
 
 @pytest.fixture
 def dataset_path():
-    return os.path.join(os.getcwd(), "mlops/data/Mydataset")
+    return os.path.join(os.getcwd(), "mlops/data/Mydataset/VisDrone2019-DET-train/images/")
 
 def load_data(dataset_path):
     images = []
@@ -27,7 +27,7 @@ def test_image_loading(dataset_path):
 def test_label_format(dataset_path):
     _, labels = load_data(dataset_path)
     for label in labels:
-        assert len(label) >= 5, "Label format is incorrect"
+        assert len(label) ==10, "Label format is incorrect"
         assert 0 <= int(label[0]) <= 9, "First number in label is out of range"
 
 def test_image_color(dataset_path):
