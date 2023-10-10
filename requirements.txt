@@ -162,11 +162,11 @@ thop==0.1.1.post2209072238
 threadpoolctl==3.2.0
 tokenizers==0.14.1
 tomlkit==0.12.1
-torch==2.1.0+cu118
+torch==2.1.0
 torch-pruning==1.2.5
 torch-tb-profiler==0.4.3
-torchaudio==2.1.0+cu118
-torchvision==0.16.0+cu118
+torchaudio==2.1.0
+torchvision==0.16.0
 tqdm==4.66.1
 transformers==4.34.0
 typer==0.9.0
