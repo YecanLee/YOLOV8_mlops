@@ -1,4 +1,6 @@
 [core]
-    remote = storage
+    remote = remote_storage
 ['remote "storage"']
     url = gdrive://1OB3_5irptr7IJPlBZJ6n9BW1WRw2dVeB
+['remote "remote_storage"']
+    url = gs://yolofinal2/
