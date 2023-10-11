@@ -1,5 +1,5 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-        args: ['build', '-t', 'gcr.io/YOLOV8_mlops/0284402c1f2cba42dc844960a047badc0c6a4c6fa1281227c84109c8c05d7417', '.']
+        args: ['build', '-t', 'gcr.io/YOLOV8_mlops/978ad9c1b3d3', '.']
     - name: 'gcr.io/cloud-builders/docker'
-        args: ['push', 'gcr.io/YOLOV8_mlops/0284402c1f2cba42dc844960a047badc0c6a4c6fa1281227c84109c8c05d7417']
+        args: ['push', 'gcr.io/YOLOV8_mlops/978ad9c1b3d3']
