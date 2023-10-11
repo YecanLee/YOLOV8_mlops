@@ -1,5 +1,5 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-        args: ['build', '-t', 'gcr.io/my-python-environment/978ad9c1b3d3', '.']
+        args: ['build', '-t', 'gcr.io/yolov8final/my-python-environment', '.']
     - name: 'gcr.io/cloud-builders/docker'
-        args: ['push', 'gcr.io/my-python-environment/978ad9c1b3d3']
+        args: ['push', 'gcr.io/yolov8final/my-python-environment']
